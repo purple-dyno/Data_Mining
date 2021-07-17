@@ -7,7 +7,7 @@
 
 ## Language
 
-[Agglomerative Clustering](Agglomerative_Clustering) , [Apriori](Apriori) , [Decision Tree(ID3)](Decision_Tree_ID3) , [K-Means](K-Means) , [Naive Bayes Classifier](Naive_Bayes_Classifier) are written in Java using JDK 16
+[Agglomerative Clustering](Agglomerative_Clustering) , [Apriori Algorithm](Apriori) , [Decision Tree (ID3)](Decision_Tree_ID3) , [K-Means Algorithm](K-Means) , [Naive Bayes Classifier](Naive_Bayes_Classifier) are written in Java using JDK 16
 
 ## Build
 
@@ -36,9 +36,10 @@ python filename.py
 The following algorithms have been implemented in Java and Python for the course **Data Warehousing & Mining Lab (Lab Code: CSL603)** - Semester 6 of Computer Engineering Department in UNIVERSITY OF MUMBAI.
 
 -   [Agglomerative Clustering](Agglomerative_Clustering)
--   [Apriori](Apriori)
--   [Decision Tree(ID3)](Decision_Tree_ID3)
--   [K-Means](K-Means)
+-   [Apriori Algorithm](Apriori)
+-   [Decision Tree (ID3)](Decision_Tree_ID3)
+-   [K-Means Algorithm](K-Means)
 -   [Naive Bayes Classifier](Naive_Bayes_Classifier)
--   [Hits](hits.py)
--   [linearRegression](linearRegression.py)
+-   [HITS Algorithm](hits.py)
+-   [Linear Regression](linearRegression.py)
+-   [Euclidean Distance](Euclidean_Distance)
