@@ -2,6 +2,7 @@
 
 ## Input
 
+```
 Enter number of Clusters: 2
 
 Enter number of points: 9
@@ -14,9 +15,11 @@ Enter Mean
 Enter Mean 1: 2
 
 Enter Mean 2: 4
+```
 
 ## Output
 
+```
 Cluster 1: 2.0 3.0
 
 Mean 1 = 2.5
@@ -322,3 +325,4 @@ Centroid 3 = (1.50, 3.50)
 
 
 Since the clusters are same as the last iteration, these are the final clusters.
+```

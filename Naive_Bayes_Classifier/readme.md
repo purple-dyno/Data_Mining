@@ -2,6 +2,7 @@
 
 ## Input
 
+````
 Number of instances: 14
 
 Number of attributes: 5
@@ -53,10 +54,11 @@ income: medium
 student: yes
 
 credit_rating: fair
-
+```
 
 ## Output
 
+```
 Prior probability P(i) for each class
 
 P(buys_computer = 'no') = 5/14 = 0.357
@@ -108,3 +110,4 @@ Since, 0.028 is greatest. Therefore the naive bayesian classfier predicts (buys_
 If frequency of even one tuple is more than 1 then select "Yes" (1) for the following input prompt
 
 If count?: Yes:1 or No:0:
+```

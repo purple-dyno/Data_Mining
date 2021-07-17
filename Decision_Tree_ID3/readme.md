@@ -2,6 +2,7 @@
 
 ## Input
 
+```
 Enter the number of instances: 11
 
 Enter the number of attributes: 4
@@ -32,14 +33,16 @@ marketing 31...35 41K...45K no 4
 secretary 46...50 36K...40K yes 4
 
 secretary 26...30 26K...30K no 6
+```
 
 ## Output
 
+```
 Yes = 52, No = 113
 
 Entropy = -52/165 * log(52/165) -113/165 * log(113/165) = 0.899
 
-### For Attribute department:
+For Attribute department:
 
 sales: Yes = 30, No = 80
 
@@ -65,7 +68,7 @@ Entropy = -4/10 * log(4/10) -6/10 * log(6/10) = 0.971
 
 `Information Gain = 0.899 - 0.850 = 0.049`
 
-### For Attribute age:
+For Attribute age:
 
 31...35: Yes = 35, No = 44
 
@@ -101,7 +104,7 @@ Entropy = -4/4 * log(4/4) -0/4 * log(0/4) = 0.000
 
 `Information Gain = 0.899 - 0.474 = 0.425`
 
-### For Attribute salary:
+For Attribute salary:
 
 46K...50K: Yes = 40, No = 23
 
@@ -137,7 +140,7 @@ Entropy = -4/4 * log(4/4) -0/4 * log(0/4) = 0.000
 
 `Information Gain = 0.899 - 0.362 = 0.538`
 
-### Attribute 'salary' has the highest gain(0.537518) so it is choosen as the root node
+Attribute 'salary' has the highest gain(0.537518) so it is choosen as the root node
 
 ---
 
@@ -145,7 +148,7 @@ salary:46K...50K : Yes = 40, No = 23
 
 Entropy = -40/63 * log(40/63) -23/63 * log(23/63) = 0.947
 
-### For Attribute department:
+For Attribute department:
 
 sales: Yes = 30, No = 0
 
@@ -168,7 +171,7 @@ secretary: Yes = 0, No = 0
 
 `Information Gain = 0.947 - 0.000 = 0.947`
 
-### For Attribute age:
+For Attribute age:
 
 31...35: Yes = 30, No = 0
 
@@ -198,7 +201,7 @@ Entropy = -10/10 * log(10/10) -0/10 * log(0/10) = 0.000
 
 `Information Gain = 0.947 - 0.000 = 0.947`
 
-### Attribute 'department' has the highest gain(0.946819) so it is choosen as the root node
+Attribute 'department' has the highest gain(0.946819) so it is choosen as the root node
 
 ---
 
@@ -270,7 +273,7 @@ status = Yes
 
 ---
 
-### Decision Tree
+Decision Tree
 
 salary
 
@@ -293,7 +296,7 @@ salary
 |__36K...40K: = Yes
 
 
-### Rules
+Rules
 
 salary:46K...50K, department:sales, status: = Yes
 
@@ -310,7 +313,7 @@ salary:66K...70K, status: = Yes
 salary:41K...45K, status: = No
 
 salary:36K...40K, status: = Yes
-
+```
 
 ## Note
 
