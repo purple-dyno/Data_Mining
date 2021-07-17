@@ -2,6 +2,7 @@
 
 ## Input
 
+```
 Enter number of transactions: 9
 
 Enter transactions
@@ -27,9 +28,11 @@ Enter transactions
 Enter minimum support (%): 22
 
 Enter confidence (%): 70
+```
 
 ## Output
 
+```
 Support = (Tuples containing A U B) / (Total tuples)
 
 Confidence = (Tuples containing A U B) / (Total containing only A)
@@ -148,3 +151,4 @@ The strong association rules are
 I1 ^ I5 => I2 = 100%
 I2 ^ I5 => I1 = 100%
 I5 => I1 ^ I2 = 100%
+```
