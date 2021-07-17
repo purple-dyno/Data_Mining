@@ -40,6 +40,6 @@ The following algorithms have been implemented in Java and Python for the course
 -   [Decision Tree (ID3)](Decision_Tree_ID3)
 -   [K-Means Algorithm](K-Means)
 -   [Naive Bayes Classifier](Naive_Bayes_Classifier)
--   [HITS Algorithm](hits.py)
--   [Linear Regression](linearRegression.py)
+-   [Hits Algorithm](HITS_Algorithm)
+-   [Linear Regression](Linear_Regression)
 -   [Euclidean Distance](Euclidean_Distance)
