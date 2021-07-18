@@ -4,7 +4,6 @@ https://github.com/Manu1ND
 https://github.com/Ichigo27
 */
 
-package Apriori;
 // Apriori
 
 import java.util.*;
@@ -89,7 +88,7 @@ public class apriori {
 	void calcC(ArrayList<String> itemsInput, int groupCount) {
 		ArrayList<String> output = new ArrayList<String>();
 		List<String> tempItems = new ArrayList<String>();
-		//int count;
+		// int count;
 		c.clear();
 		combination(itemsInput, output, groupCount);
 		prune(groupCount - 1);
@@ -97,13 +96,15 @@ public class apriori {
 			tempItems = Arrays.asList(i.replace("[", "").replace("]", "").split(", "));
 			for (List<String> j : dataset.values()) {
 				if (j.containsAll(tempItems)) {
-					/* if (tempItems.size() == 1) {
+					/*
+					if (tempItems.size() == 1) {
 						count = c.get(i) + Collections.frequency(j, tempItems.get(0));
 					} else {
 						count = c.get(i) + 1;
 					}
-					c.put(i, count); */
-					c.put(i, c.get(i)+1);
+					c.put(i, count);
+					*/
+					c.put(i, c.get(i) + 1);
 				}
 			}
 		}

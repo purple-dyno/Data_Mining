@@ -2,27 +2,22 @@
 
 ## Input
 
+```
 Enter number of points: 6
-
 Enter points: P1 P2 P3 P4 P5 P6
 
 Enter distance matrix
-
 0.00 0.23 0.22 0.37 0.34 0.23
-
 0.23 0.00 0.15 0.20 0.14 0.25
-
 0.22 0.15 0.00 0.15 0.28 0.11
-
 0.37 0.20 0.15 0.00 0.29 0.22
-
 0.34 0.14 0.28 0.29 0.00 0.39
-
 0.23 0.24 0.11 0.22 0.39 0.00
 
 1\. Single Linkage       2. Complete Linkage     3. Average Linkage
 
 Choose Method: 3
+```
 
 ## Output
 

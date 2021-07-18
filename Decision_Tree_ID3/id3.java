@@ -69,7 +69,8 @@ class id3 {
 		tempGain = -(aInfo + bInfo) / Math.log(2);
 		if (tempGain == 0) // remove negative sign from -0
 			tempGain = Math.round(tempGain);
-		System.out.printf("\nEntropy = -%d/%d * log(%d/%d) -%d/%d * log(%d/%d) = %.3f\n", a, total, a, total, b, total, b, total, tempGain);
+		System.out.printf("\nEntropy = -%d/%d * log(%d/%d) -%d/%d * log(%d/%d) = %.3f\n", a, total, a, total, b, total,
+				b, total, tempGain);
 		return tempGain;
 
 	}
@@ -85,7 +86,7 @@ class id3 {
 		entropy /= instancesPerValue;
 		for (int i = 0; i < noOfValues; i++) {
 			System.out.printf("(%d/%d) * %.3f ", instancesPerAttr[i], instancesPerValue, infos[i]);
-			if (i!=noOfValues-1) {
+			if (i != noOfValues - 1) {
 				System.out.printf("+ ");
 			}
 		}
@@ -122,13 +123,13 @@ class id3 {
 				values += labels[attributeIndex[i]] + ":" + labelsDum[attributeIndex[i]][valueIndex[i]] + " ";
 			}
 		}
-		if(values == ""){
-			System.out.print("\nYes = " + yes +", No = " + no);
+		if (values == "") {
+			System.out.print("\nYes = " + yes + ", No = " + no);
 		} else {
-			System.out.println("\n" + values + ": " + "Yes = " + yes +", No = " + no);
+			System.out.println("\n" + values + ": " + "Yes = " + yes + ", No = " + no);
 		}
 		gain = calcInfo(yes, no);
-		if ((yes+no) == 0) {
+		if ((yes + no) == 0) {
 			return;
 		} else if (gain == 0) {
 			for (int i = 0; i < nodeLevel; i++) {
@@ -177,7 +178,7 @@ class id3 {
 						}
 					}
 				}
-				System.out.print("\n"+labelsDum[i][j] + ": " + "Yes = " + yes +", No = " + no);
+				System.out.print("\n" + labelsDum[i][j] + ": " + "Yes = " + yes + ", No = " + no);
 				info = calcInfo(yes, no);
 				infos[j] = info;
 				instancesPerAttr[j] = yes + no;

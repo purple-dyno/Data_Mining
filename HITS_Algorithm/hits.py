@@ -1,3 +1,8 @@
+"""
+Authors
+https://github.com/Manu1ND
+https://github.com/Ichigo27
+"""
 # HITS
 import numpy as np
 import math

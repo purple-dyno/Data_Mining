@@ -28,7 +28,7 @@ class kMeans2D {
 		if (nOfElements < nOfClusters) {
 			throw new InvalidClusterSize("Number of Elements cannot be less than Clusters!\n");
 		}
-		
+
 		// input points
 		System.out.println("\nEnter Points");
 		for (int i = 0; i < nOfElements; i++) {
@@ -36,7 +36,7 @@ class kMeans2D {
 			elements[i][0] = sc.nextDouble();
 			elements[i][1] = sc.nextDouble();
 		}
-		
+
 		// input centroids
 		System.out.println("\nEnter Centroid");
 		for (int i = 0; i < nOfClusters; i++) {
@@ -44,10 +44,10 @@ class kMeans2D {
 			centroid[i][0] = sc.nextDouble();
 			centroid[i][1] = sc.nextDouble();
 		}
-		
+
 		System.out.println("Let centroids be");
 		for (int i = 0; i < nOfClusters; i++) {
-			System.out.printf("C%d: (%.3f, %.3f)\n", (i+1), centroid[i][0], centroid[i][1]);
+			System.out.printf("C%d: (%.3f, %.3f)\n", (i + 1), centroid[i][0], centroid[i][1]);
 		}
 		System.out.println("\nCalculate the distance between points and centroids using Euclidean distance");
 		System.out.println("write here euclidean formula");
@@ -63,12 +63,12 @@ class kMeans2D {
 		}
 		// store elements in cluster
 		for (int i = 0; i < nOfElements; i++) {
-			System.out.print("\n"+(i+1)+": ");
+			System.out.print("\n" + (i + 1) + ": ");
 			leastDiff = dist(elements[i][0], elements[i][1], centroid[0][0], centroid[0][1]);
 			clusterIndex = 0;
 			for (int j = 0; j < nOfClusters; j++) {
 				tempDist = dist(elements[i][0], elements[i][1], centroid[j][0], centroid[j][1]);
-				System.out.printf("C%d = %.3f, ", j+1, tempDist);
+				System.out.printf("C%d = %.3f, ", j + 1, tempDist);
 				if (tempDist < leastDiff) {
 					leastDiff = tempDist;
 					clusterIndex = j;
@@ -92,7 +92,7 @@ class kMeans2D {
 
 		// break the recursive call if clusters are same
 		for (int i = 0; i < nOfClusters; i++) {
-			if((oldCentroid[i][0] != centroid[i][0])||oldCentroid[i][1] != centroid[i][1]) {
+			if ((oldCentroid[i][0] != centroid[i][0]) || oldCentroid[i][1] != centroid[i][1]) {
 				flag = 1;
 				break;
 			}

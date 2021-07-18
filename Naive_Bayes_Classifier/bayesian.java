@@ -4,13 +4,12 @@ https://github.com/Manu1ND
 https://github.com/Ichigo27
 */
 
-package Bayesian;
 // Naive Bayes Classifier
 
 import java.util.*;
 
 public class bayesian {
-	int nOfInst, nOfInstCount=0, nOfAttr, countPerTupleFlag;
+	int nOfInst, nOfInstCount = 0, nOfAttr, countPerTupleFlag;
 	String predictAttribute;
 	ArrayList<String> labels = new ArrayList<String>();
 	ArrayList<Integer> countPerTuple = new ArrayList<Integer>();
@@ -40,7 +39,7 @@ public class bayesian {
 		}
 		System.out.print("If count?: Yes:1 or No:0: ");
 		countPerTupleFlag = sc.nextInt();
-		if (countPerTupleFlag == 1){
+		if (countPerTupleFlag == 1) {
 			for (int i = 0; i < nOfInst; i++) {
 				countPerTuple.add(sc.nextInt());
 				nOfInstCount += countPerTuple.get(i);
@@ -80,10 +79,10 @@ public class bayesian {
 
 		System.out.println("\nPrior probability P(i) for each class");
 		for (String predVal : attributes.get(predictAttribute)) {
-			//count = Collections.frequency(dataset.get(predictAttribute), predVal);
+			// count = Collections.frequency(dataset.get(predictAttribute), predVal);
 			count = 0;
 			for (int i = 0; i < nOfInst; i++) {
-				if(dataset.get(predictAttribute).get(i).equals(predVal)) {
+				if (dataset.get(predictAttribute).get(i).equals(predVal)) {
 					count += countPerTuple.get(i);
 				}
 			}
@@ -117,18 +116,20 @@ public class bayesian {
 			System.out.printf("P(X|%s = '%s') = %.3f\n", predictAttribute, predVal, prob.get(predVal));
 		}
 		System.out.println();
-		
+
 		for (String predVal : attributes.get(predictAttribute)) {
 			Double tempProb = priorProb.get(predVal) / Double.valueOf(nOfInstCount);
 			result = prob.get(predVal) * tempProb;
-			System.out.printf("P(X|%s = '%s') * P(%s = '%s') = %.3f * %.3f = %.3f\n", predictAttribute, predVal, predictAttribute,
-					predVal, prob.get(predVal), tempProb, result);
+			System.out.printf("P(X|%s = '%s') * P(%s = '%s') = %.3f * %.3f = %.3f\n", predictAttribute, predVal,
+					predictAttribute, predVal, prob.get(predVal), tempProb, result);
 			if (resultMAX < result) {
 				finalPred = predVal;
 				resultMAX = result;
 			}
 		}
-		System.out.printf("\nSince, %.3f is greatest. Therefore the naive bayesian classfier predicts (%s = '%s') for Sample X where X = {..}", resultMAX, predictAttribute, finalPred);
+		System.out.printf(
+				"\nSince, %.3f is greatest. Therefore the naive bayesian classfier predicts (%s = '%s') for Sample X where X = {..}",
+				resultMAX, predictAttribute, finalPred);
 	}
 
 	public static void main(String[] args) {

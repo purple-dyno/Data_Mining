@@ -16,7 +16,7 @@ class kMeans1D {
 	static double elements[] = new double[100];
 	double k[][] = new double[100][100];
 
-	void insert() throws InvalidClusterSize{
+	void insert() throws InvalidClusterSize {
 		System.out.print("Enter number of Clusters: ");
 		nOfClusters = sc.nextInt();
 		System.out.print("Enter number of points: ");
@@ -39,7 +39,7 @@ class kMeans1D {
 
 	void solve() {
 		int clusterIndex = flag = 0;
-		double leastDiff, tempDist;;
+		double leastDiff, tempDist;
 
 		for (int i = 0; i < nOfClusters; i++) {
 			ptr[i] = 0;

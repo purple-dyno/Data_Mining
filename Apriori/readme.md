@@ -6,27 +6,17 @@
 Enter number of transactions: 9
 
 Enter transactions
-
 100 I1,I2,I5
-
 200 I2,I4
-
 300 I2,I3
-
 400 I1,I2,I4
-
 500 I1,I3
-
 600 I2,I3
-
 700 I1,I3
-
 800 I1,I2,I3,I5
-
 900 I1,I2,I3
 
 Enter minimum support (%): 22
-
 Enter confidence (%): 70
 ```
 
@@ -34,81 +24,52 @@ Enter confidence (%): 70
 
 ```
 Support = (Tuples containing A U B) / (Total tuples)
-
 Confidence = (Tuples containing A U B) / (Total containing only A)
 
 Minimum support count: 2
 
 C1:
-
 [I1] :     6
-
 [I4] :     2
-
 [I5] :     2
 
 L1:
-
 [I1] :     6
-
 [I2] :     7
-
 [I3] :     6
-
 [I4] :     2
-
 [I5] :     2
 
 ---
 
 C2:
-
 [I1, I2] : 4
-
 [I1, I3] : 4
-
 [I1, I4] : 1
-
 [I1, I5] : 2
-
 [I2, I3] : 4
-
 [I2, I4] : 2
-
 [I2, I5] : 2
-
 [I3, I4] : 0
-
 [I3, I5] : 1
-
 [I4, I5] : 0
 
 L2:
-
 [I1, I2] : 4
-
 [I1, I3] : 4
-
 [I1, I5] : 2
-
 [I2, I3] : 4
-
 [I2, I4] : 2
-
 [I2, I5] : 2
 
 ---
 
 C3:
-
 [I1, I2, I3] : 2
-
 [I1, I2, I5] : 2
 
 L3:
-
 [I1, I2, I3] : 2
-
 [I1, I2, I5] : 2
 
 ---

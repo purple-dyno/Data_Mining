@@ -23,7 +23,7 @@ java filename.java
 
 ## Implementation in Python
 
-[Hits Algorithm](HITS_Algorithm) , [Linear Regression](Linear_Regression) , [Euclidean Distance](Euclidean_Distance) are written in Python 3.6.1
+[Hits Algorithm](HITS_Algorithm), [Linear Regression](Linear_Regression), [Euclidean Distance](Euclidean_Distance) are written in Python 3.6.1
 
 ### Run
 

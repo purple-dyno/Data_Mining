@@ -1,3 +1,8 @@
+"""
+Authors
+https://github.com/Manu1ND
+https://github.com/Ichigo27
+"""
 # Linear Regression
 
 import numpy as np
